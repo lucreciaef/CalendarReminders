@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_calendar">
+
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.lucrecia.mycalendar.ui.calendar.CalendarFragment"
+        android:label="@string/title_calendar"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.lucrecia.mycalendar.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_options"
+        android:name="com.lucrecia.mycalendar.ui.options.OptionsFragment"
+        android:label="@string/title_options"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
